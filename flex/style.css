@@ -1,0 +1,17 @@
+main {
+  /* width: 80%;
+  margin: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+article {
+  /* float: left;
+  margin-left: 20px; */
+  width: 200px;
+  height: 200px;
+  background-color: rgb(67, 67, 16);
+  margin-top: 20px;
+}

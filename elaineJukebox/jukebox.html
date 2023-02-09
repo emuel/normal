@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="jukebox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="drive"></div>
+        <div id="side_container">
+                <label>Search: </label>
+                <input type="text" id="query">
+                <!-- <input type="button" id="submit" value="Submit" onclick="click"> -->
+                <button id="submit">Submit</button>
+                <div id="tape_container"></div>
+        </div>
+        <div id="buttons">
+            <button id="add_to_playlist">Add to playlist</button>
+            <button id="play_all">Play All</button>
+            <button id="go_to_drive">Go for a drive</button>
+        </div>
+        <div id="cassette_container">
+            <div id="cassette"></div>
+        </div>
+        <div id="playlist_container_all">
+            <div id="user_tapes_container">My Mixes:<br></div>
+            <div id="playlist_container_buttons"> 
+                <button id="finish_mix">Finish Mixtape</button>
+            </div>
+            <div id="playlist_container"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="jukebox.js"></script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button onclick="showdat()">show</button>
+    <div id="namez"></div>
+  </body>
+</html>
+<script>
+  let namez = document.querySelector("#namez");
+  let dadata = {};
+  async function getAsteroidSize() {
+    const response = await fetch(
+      "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=6GkozFBru8KqBfF32aHkxtVoL1QpwAsDWU5T5ltz"
+    );
+    const data = await response.json();
+    dadata = data;
+    // console.log(data);
+  }
+  getAsteroidSize();
+  function showdat() {
+    console.log(dadata);
+    for (i = 0; i < dadata.near_earth_objects.length; i++) {
+      namez.innerHTML +=
+        "<h3>" + dadata.near_earth_objects[i].name_limited + "</h3>";
+    }
+  }
+</script>

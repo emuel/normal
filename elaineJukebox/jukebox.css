@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Pixel;
+    src: url("images/Minecraft.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(124, 82, 28);
+    font-family: Pixel;
+    overflow: auto;
+}
+
+.tape {
+    width: 300px;
+    height: 180px;
+    /* background-color: blueviolet; */
+    margin: 30px;
+    position: relative;
+    background-image: url(images/tape.png);
+    background-size: contain;
+    z-index: 2;
+}
+
+#container {
+    width: 1450px;
+    height: 700px;
+    border: 5px solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    background-image: url("images/back.png");
+    background-size: 1450px 700px;
+    background-repeat: no-repeat;
+}
+
+#side_container {
+    /* border: 5px solid white; */
+    width: 355px;
+    height: 670px;
+    padding: 15px;
+    background-color: rgba(0, 0, 255, 0.319);
+}
+
+#playlist_container_all{
+    background-color: rgba(0, 0, 255, 0.319);
+    position: absolute;
+    width: 400px;
+    right: 0px;
+    top: 0px;
+    height: 670px;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+audio {
+    width: 90%;
+}
+
+#cassette_container {
+    top: 45%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 400px;
+    height: 530px;
+    background-image: url(images/cassette.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#cassette {
+    /* background-color: brown; */
+    width: 300px;
+    height: 180px;
+    position: fixed;
+    left: 48%;
+    top: 54.5%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border: 2px solid white;
+}
+
+#songlabel {
+    position: inherit;
+    top: 35px;
+    left: 40px;
+    max-width: 220px;
+    word-wrap: break-word;
+}
+
+#buttons {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 8%;
+}
+
+button {
+    font-family: Pixel;
+    margin: 5px;
+    padding: 10px;
+    border: solid 3px;
+}
+
+#user_tapes_container {
+    position: relative;
+    width: 360px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 15px;
+}
+
+#ui_container {
+    position: absolute;
+    width: contain;
+    height: contain;
+    background-color: rgba(255, 255, 255, 0.664);
+    margin: 15px;
+}
+
+select {
+    padding: 5px;
+    margin: 5px;
+}
